@@ -9,6 +9,6 @@ namespace MemoryCache
 
         IDisposable RegisterResource(Func<Task<byte[]>> resourceCreator, bool loadImmediate);
 
-        ICachedResource GetCachedResource(IDisposable resourceKey);
+        ICachable GetCachedResource(IDisposable resourceKey);
     }
 }
